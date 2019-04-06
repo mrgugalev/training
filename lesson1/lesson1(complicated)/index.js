@@ -28,7 +28,7 @@ alert(getBudget(1));
 
 // усложненное задания
 
-/*function pow(num, k){
+function pow(num, k){
   let result = 1;           
   for(let i=0; i<k; i++){
     result = result * num;
@@ -37,8 +37,6 @@ alert(getBudget(1));
 }
 console.log(pow(a(),3));
 console.log( ('' + pow (a(), 3)).slice(0,2) );
-
-
 
 
 function a() {
