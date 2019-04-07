@@ -14,12 +14,12 @@ let appData = {
     income: '',
     savings: false
 }
+console.log(appData.expenses);
 
 appData.expenses[firstQuestion] = firstAnswer;
 appData.expenses[secondQuestion] = secondAnswer;
 
 function getBudget(i) {
-  return appData.budget / 30 * i;
+  return (appData.budget / 30 * i).toFixed(2);
 }
-getBudget(1);
-
+alert(getBudget(1));
