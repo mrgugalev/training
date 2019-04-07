@@ -24,8 +24,6 @@ function getBudget(i) {
 }
 alert(getBudget(1));
 
-
-
 // усложненное задания
 
 function pow(num, k){
@@ -48,30 +46,4 @@ function a() {
   }
   return summa;
  }
-console.log(a() );*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(a() );
