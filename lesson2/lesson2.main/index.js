@@ -8,24 +8,22 @@ let appData = {
     optionalExpenses: {}, 
     income: '',
     savings: false
-};
+}
 
 for(let i = 0; i < 2; i++) {
   let a = prompt('Введите обязательную статью расходов в этом месяце:', ''),
       b = prompt('Во сколько обойдемся: ', '');
-  
   if ( typeof(a) === 'string' && typeof (a) != null && typeof (b) != null
     && a != '' && b != '' && a.length <= 50) {
       console.log('done');
       appData.expenses[a] = b;
   } else {
     console.log('не done');
-    continue;
+    i = 0;
   }
-};
+}
 
 appData.moneyPerDay = appData.budget / 30;
-
 alert('Ежедневный бюджет: ',  + appData.moneyPerDay);
 if(appData.moneyPerDay < 1000){
   console.log('you poor');
@@ -49,10 +47,10 @@ if(appData.moneyPerDay < 1000){
 //       appData.expenses[a] = b;
 //   } else {
 //     console.log('не done');
+//     i = 0;
 //   }
 //   i++;
-// };
-
+// }
 
 // let i = 0;    //while do вариант
 // do{
@@ -65,6 +63,7 @@ if(appData.moneyPerDay < 1000){
 //       appData.expenses[a] = b;
 //   } else {
 //     console.log('не done');
+//     i = 0;
 //   }
 //   i++;
 // } while(i < 2);
