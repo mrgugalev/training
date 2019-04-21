@@ -19,8 +19,9 @@ for(let i = 0; i < 2; i++) {
       appData.expenses[a] = b;
   } else {
     console.log('не done');
-    i = 0;
+    i--;
   }
+  console.log(i);
 }
 
 appData.moneyPerDay = appData.budget / 30;
